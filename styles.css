@@ -197,7 +197,7 @@ body {
 }
 
 .forecast-container {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
@@ -429,7 +429,8 @@ footer {
   .weather-container {
     padding: 12px;
     margin: 10px;
-    background: linear-gradient(75deg, #c9d6ff, #e2e2e2);
+    background-image: url(image2.jpg);
+    background-size: cover;
   }
 
   .weather-info {
