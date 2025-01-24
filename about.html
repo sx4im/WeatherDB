@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-cloud-sun"></i>
+            <span>Weather DB</span>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-content">
+            <h1>About Weather Dashboard</h1>
+            <p><b>Welcome to Weather Dashboard,</b> your ultimate source for comprehensive, real-time weather forecasting. Our platform, powered by the Saim Shafique, ensures you receive accurate and timely weather information for cities around the world, whether you’re planning your day, week, or traveling to new destinations.</p>
+
+            <p>Key features of our weather dashboard include:</p>
+            <ul>
+                <li><b>Current Weather Conditions:</b> Get up-to-the-minute information on the weather in your location, including temperature, humidity, cloud cover, wind speed, and atmospheric pressure.</li>
+                <li> <b>5-Day Weather Forecast:</b> Plan ahead with our detailed 5-day forecast, highlighting daily highs and lows, precipitation chances, and other vital metrics to help you prepare.</li>
+                <li> <b>Detailed Weather Metrics:</b> In-depth data on key weather parameters, including temperature, wind speed, humidity, pressure, UV index, and more, to give you a clear picture of the current and future conditions.</li>
+                <li> <b>Country-Specific Weather Search:</b> Easily search for weather data by country or city, making it simple to find accurate forecasts no matter where you are or where you're headed.</li>
+                <li><b>User-Friendly Interface:</b> A clean, intuitive interface designed to make accessing weather information fast and hassle-free. Whether you're checking the weather for your next vacation or keeping track of changing conditions in your city, we’ve made it easy to stay informed.</li>
+            </ul>
+<br>
+            <p>We strive to provide the most accurate and reliable weather information to help you plan your activities
+                and stay prepared for any weather conditions.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="creator-info">
+                <span class="footer-text"> <b>Created by Saim Shafique &#169</b> </span>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="https://wa.me/03704831117" target="_blank">Powered by sx4im</a>
+                <a href="contact.html">Get in Touch</a>
+                <a href="about.html">Learn More</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add mobile nav toggle functionality
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

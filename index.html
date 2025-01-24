@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-cloud-sun"></i>
+            <span>Weather DB</span>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="search-container">
+            <div class="search-group">
+                <input type="text" id="search" list="city-suggestions" placeholder="Enter city name..."
+                    autocomplete="off">
+                <datalist id="city-suggestions"></datalist>
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="weather-container">
+            <div class="current-weather">
+                <h2 class="city-name">Weather Dashboard</h2>
+                <div class="weather-info">
+                    <div class="temperature animate-fade-in">
+                        <span id="temp">--</span>°C
+                    </div>
+                    <div class="weather-description">
+                        <i id="weather-icon" class="fas"></i>
+                        <span id="description">--</span>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-tint animate-bounce"></i>
+                        <span>Humidity : <span id="humidity">--</span>%</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-wind animate-bounce"></i>
+                        <span>Wind : <span id="wind">--</span> km/h</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-compass animate-bounce"></i>
+                        <span>Pressure : <span id="pressure">--</span> hPa</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecast">
+                    <!-- Forecast cards will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="creator-info">
+                <span class="footer-text"> <b>Created by Saim Shafique &#169</b></span>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="https://wa.me/03704831117" target="_blank">Powered by sx4im</a>
+                <a href="about.html">Learn More</a>
+                <a href="contact.html">Get in Touch</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
